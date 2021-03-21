@@ -44,13 +44,13 @@ export default function App() {
           <div class="col">
             <strong id="current-temperature">18</strong>
             <span class="units">
-              <a class="active" id="celsius-link">
+              <h4 class="active" id="celsius-link">
                 °C
-              </a>{" "}
+              </h4>{" "}
               |
-              <a id="fahrenheit-link">
+              <h4 id="fahrenheit-link">
                 °F
-              </a>
+              </h4>
             </span>
           </div>
           <div class="col">
