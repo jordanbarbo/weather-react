@@ -3,6 +3,7 @@ import "./styles.css";
 
 export default function App() {
   return (
+    <div>
     <div class="container">
       <div class="weather-app">
         <div class="row">
@@ -64,6 +65,13 @@ export default function App() {
           </div>
         </div>
       </div>
+    </div>
+      <p class="open-source-link">
+      <a href="https://github.com/jordanbarbo/weather-app" >
+      Open-source code
+      </a>
+      {" "} by Jordan Barbo
+      </p>
     </div>
   );
 }
