@@ -40,16 +40,10 @@ export default function App() {
                 id="icon"
               />
             </span>
-          </div>
-          <div class="col">
             <strong id="current-temperature">18</strong>
             <span class="units">
               <h4 class="active" id="celsius-link">
-                °C
-              </h4>{" "}
-              |
-              <h4 id="fahrenheit-link">
-                °F
+                °C | °F
               </h4>
             </span>
           </div>
