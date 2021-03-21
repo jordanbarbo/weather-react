@@ -1,25 +1,75 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row">
+          <span class="col-6">
+            <form class="form-inline" id="city-submit-form">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="City Search"
+                aria-label="Search"
+                id="city-search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+                id="search-button"
+              >
+                Search
+              </button>
+            </form>
+          </span>
+          <span class="col-3">
+            <h3 id="current-date">Sun Jan 17 18:40</h3>
+          </span>
+        </div>
+
+        <h2 id="city">Los Angeles</h2>
+
+        <div class="row">
+          <div class="col">
+            <span class="image-description">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="Clear"
+                id="icon"
+              />
+            </span>
+          </div>
+          <div class="col">
+            <strong id="current-temperature">18</strong>
+            <span class="units">
+              <a class="active" id="celsius-link">
+                °C
+              </a>{" "}
+              |
+              <a id="fahrenheit-link">
+                °F
+              </a>
+            </span>
+          </div>
+          <div class="col">
+            <ul class="current-details">
+              <li class="current-description"></li>
+              <li>
+                <strong id="current-high">26</strong>/
+                <span id="current-low">11</span>
+              </li>
+              <li>
+                Wind: <span id="wind">3mph</span>
+              </li>
+              <li>
+                Humidity: <span id="humidity">47</span>%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
