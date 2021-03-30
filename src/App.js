@@ -3,8 +3,8 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <div>
-    <div class="container">
+    <div className="App">
+    <div className="container">
       <div class="weather-app">
         <div class="row">
           <span class="col-6">
